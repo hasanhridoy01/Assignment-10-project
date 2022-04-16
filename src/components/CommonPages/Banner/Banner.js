@@ -7,7 +7,7 @@ import './Banner.css';
 const Banner = () => {
   return (
     <div>
-      <Carousel>
+      <Carousel className='mt-5'>
         <Carousel.Item>
           <img
             className="d-block w-100 img"
@@ -17,7 +17,7 @@ const Banner = () => {
           <Carousel.Caption>
             <h1 className='text-name'>Hi! my name is John Smith</h1>
             <h1 className='text2'>i am a Doctor.</h1>
-            <button className='btn btn-danger mb-4'>About Me</button>
+            <a className='btn btn-danger mb-4' href='/about'>About Me</a>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

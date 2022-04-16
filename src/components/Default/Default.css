@@ -1,0 +1,14 @@
+.default{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.default h1{
+  font-size: 45px;
+  color: red;
+}
+.default h2{
+  font-size: 30px;
+  color: orangered;
+}
