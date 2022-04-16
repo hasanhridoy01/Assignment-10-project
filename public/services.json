@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Oral Hygienist",
+        "description": "Maecenas facilisis metus sed leo aliquam",
+        "img": "https://i.ibb.co/PTcQPsp/service-01-367x245.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Labolatory Tests",
+        "description": "Maecenas facilisis metus sed leo aliquam",
+        "img": "https://i.ibb.co/d6QwTKp/service-02-367x245.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Health Lifestyle",
+        "description": "Maecenas facilisis metus sed leo aliquam",
+        "img": "https://i.ibb.co/Z6rH5Nq/service-03-367x245.jpg"
+    },
+    {
+        "id": 4,
+        "name": "ECG Tests",
+        "description": "Maecenas facilisis metus sed leo aliquam",
+        "img": "https://i.ibb.co/PCd1Jhk/service-04-367x245.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Arythmia Treatment",
+        "description": "Maecenas facilisis metus sed leo aliquam",
+        "img": "https://i.ibb.co/yVTg0xg/service-05-367x245.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Physical Examination",
+        "description": "Maecenas facilisis metus sed leo aliquam",
+        "img": "https://i.ibb.co/51MHD06/service-06-367x245.jpg"
+    }
+]
