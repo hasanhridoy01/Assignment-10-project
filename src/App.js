@@ -10,6 +10,7 @@ import Details from './components/HomePages/Details/Details';
 import Default from './components/Default/Default';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+import RequireAuth from './components/HomePages/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -17,11 +18,23 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <Routes>
-        <Route path='/' element={ <Home></Home> }></Route>
-        <Route path='/home' element={ <Home></Home> }></Route>
+        <Route path='/' element={ 
+          <RequireAuth>
+            <Home></Home>
+          </RequireAuth>
+         }></Route>
+        <Route path='/home' element={ 
+          <RequireAuth>
+            <Home></Home>
+          </RequireAuth>
+         }></Route>
         <Route path='/blog' element={ <Blog></Blog> }></Route>
         <Route path='/about' element={ <About></About> }></Route>
-        <Route path='/details/:detailsId' element={ <Details></Details> }></Route>
+        <Route path='/details/:detailsId' element={ 
+          <RequireAuth>
+            <Details></Details>
+          </RequireAuth>
+         }></Route>
         <Route path='/login' element={ <Login></Login> }></Route>
         <Route path='/signup' element={ <SignUp></SignUp> }></Route>
         <Route path='*' element={ <Default></Default> }></Route>
