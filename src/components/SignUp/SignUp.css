@@ -3,6 +3,10 @@
   color: orange;
 }
 .signup{
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 150px;
+}
+.or{
+  display: block;
+  margin: auto;
 }

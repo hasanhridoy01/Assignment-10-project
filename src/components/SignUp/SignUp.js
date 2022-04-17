@@ -93,6 +93,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
+      <h4 className='or'>or</h4>
     </div>
   );
 };

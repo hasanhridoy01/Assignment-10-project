@@ -46,6 +46,18 @@ const Login = () => {
     const password = passwordRef.current.value;
     signInWithEmailAndPassword(email, password);
   }
+
+  //user Reset password
+  const resetPassword = async (e) => {
+    e.preventDefault();
+    const email = emailRef.current.value;
+    if(email){
+      sendPasswordResetEmail(email);
+      toast('send email');
+    }else{
+      toast('Please enter your email address');
+    }
+  }
   return (
     <div className='container login'>
       <div className="row">
@@ -67,9 +79,11 @@ const Login = () => {
                 <Form.Control ref={passwordRef} name='password' type="password" placeholder="Password" />
               </Form.Group>
               
-              <p className='mb-0 mt-1'>New Form Onion Site? <Link to='/signup' className='register'>Registation</Link></p>
-              <p className='mb-3 mt-1'>Unknown Your Password? <Link to='' className='register'>Forget Password</Link></p>
+              <p className='mb-0 mt-1'>New Form Onion Site? <Link to='/signup' className='register'>Registration</Link></p>
+              <p className='mb-3 mt-1'>Unknown Your Password? <Link onClick={resetPassword} to='' className='register'>Forget Password</Link></p>
+
               {errorElement}
+              
               <Button variant="primary" type="submit">
                 Login
               </Button>
