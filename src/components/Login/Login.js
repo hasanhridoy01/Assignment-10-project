@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocalLogin from '../HomePages/SocalLogin/SocalLogin';
 
 const Login = () => {
   //email and password Ref State 
@@ -91,6 +92,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <SocalLogin></SocalLogin>
     </div>
   );
 };

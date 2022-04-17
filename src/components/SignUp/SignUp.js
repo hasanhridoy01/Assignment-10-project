@@ -7,6 +7,7 @@ import auth from '../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../HomePages/Loading/Loading'
+import SocalLogin from '../HomePages/SocalLogin/SocalLogin';
 
 const SignUp = () => {
   //email and password Ref State 
@@ -93,7 +94,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-      <h4 className='or'>or</h4>
+      <SocalLogin></SocalLogin>
     </div>
   );
 };

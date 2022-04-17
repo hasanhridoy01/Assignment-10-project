@@ -7,6 +7,8 @@
   margin-bottom: 150px;
 }
 .or{
-  display: block;
+  display: flex;
   margin: auto;
+  width: 500px;
+  margin-top: 30px;
 }
